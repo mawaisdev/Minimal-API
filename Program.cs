@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<CmsDbContext>(options => options.UseInMemoryDatabase("CMSDatabase"));
+
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
