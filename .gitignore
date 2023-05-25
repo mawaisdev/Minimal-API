@@ -1,0 +1,62 @@
+# .NET build files
+bin/
+obj/
+
+# NuGet packages
+*.nuget.cache
+*.dll
+*.pdb
+*.snk
+*.nupkg
+packages/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userprefs
+*.psess
+*.vsix
+*.sln.docstates
+
+# Test Results
+TestResults/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+
+# Visual Studio code coverage
+*.opencover.xml
+*.dotCover.xml
+
+# TFS
+$tf/
+
+# Resharper
+_ReSharper*/
+
+# Rider
+.idea/
+*.sln.iml
+
+# macOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+
+# Linux-specific files
+*~
+\#*\#
+*#
+
+# Temp files
+*.bak
+*.cache
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+.vscode/
+*.swp
