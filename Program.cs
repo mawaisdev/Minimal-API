@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
@@ -12,4 +14,11 @@ public class Course {
     public string Name { get; set; } = string.Empty;
     public long Duration { get; set; }
     public int Type { get; set; }
+}
+
+public class CmsDbContext : DbContext {
+    public DbSet<Course> Courses => Set<Course>();
+    public CmsDbContext(DbContextOptions options) : base(options)
+    {
+    }
 }
